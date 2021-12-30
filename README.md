@@ -42,15 +42,16 @@ These are the data-preprocessing techniques that I used to preprare the dataset 
 * To avoid overfitting, I used to the Early Stopping Callback technique. If the accuracy on the training set is greater than 0.98, the training stops.
 * Hyperparameter Tuning is done using RandomSearch of KerasTuner. Hypyerparameters are randomly selected and tuned.
 * Data Augmentation is used to have a better performance on new images.
-* Transfer Learning technique is used to check if a pre-trained model can outperform the model which we created.
+* I applied transfer Learning using the pre-trained model VGG16 which was trained to predict images of 1000 different classes.
+
 * I evaluated each ML model using training score, cross validation score, test score to get a better understanding about the model performances. The best model is selected using the test score.
 * The best model I got out of all models is Random Forest with an accuracy of .8793.
 
-| Model Name        | Deafult Model Test Score |Default Model Training Score | Default Model CV Score | Tuned Model Test Score | Tuned Model Training Score | Tuned Model CV Score | 
-|:-----------------:|:------------------------:|:---------------------------:|:----------------------:|:----------------------:|:--------------------------:|:---------------------:|
-|Linear Regression  |     0.7891               |     0.7833                  |         0.7800         |      0.7891            |           0.7833           |     0.7800             |
-|Random Forest      |     0.8794               |     0.9700                  |         0.8758         |      0.8793            |           0.7833           |     0.8792            |
-|KNN                |     0.8514               |     0.8861                  |         0.8105         |      0.8504            |           0.9824           |  0.8248              |
+| Model Name        | Test Score               |            Training Score   | CV Score               | 
+|:-----------------:|:------------------------:|:---------------------------:|:----------------------:|
+|Linear Regression  |     0.7891               |     0.7833                  |         0.7800         |              
+|Random Forest      |     0.8794               |     0.9700                  |         0.8758         |               
+|KNN                |     0.8514               |     0.8861                  |         0.8105         |              
 
 
 ## Other Used Techniques
