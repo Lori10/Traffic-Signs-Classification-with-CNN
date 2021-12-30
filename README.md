@@ -57,10 +57,7 @@ These are the data-preprocessing techniques that I used to preprare the dataset 
 
 ## Other Used Techniques
 
-* Object oriented programming is used to build this project in order to create modular and flexible code.
 * Built a client facing API (web application) using Flask.
-* A retraining approach is implemented using Flask framework.
-* Using Logging every information about data cleaning und model training HISTORY (since we may train the model many times using retraining approach)  is stored is some txt files and csv files for example : the amount of missing values for each feature, the amount of records removed after dropping the missing values and outliers, the amount of at least frequent categories labeled with 'other' during encoding, the dropped constant features, highly correlated independent features, which features are dropping during handling multicolleniarity, best selected features, model accuracies and errors etc.
 
 ## Demo
 
@@ -79,53 +76,7 @@ This is how the web application looks like :
 4. Run the file app.py by clicking Run and open the API that shows up in the bottom of terminal.
 
 
-## Directory Tree 
-```
- ├── Project Code PyCharm├── static 
-                             ├── css
-                                 ├── styles.css
-                         ├── templates
-                         │   ├── home.html
-                         ├── File_Operation
-                             ├── FileOperation.py
-                         ├── Functions
-                             ├── functions.py
-                         ├── Logs
-                             ├── DataPreprocessing_Log.txt
-                             ├── ModelTraining_Log.txt
-                             ├── Prediction_Log.txt
-                         ├── ModelTraining
-                             ├── trainingModel.py
-                         ├── Training_FileFromDB
-                             ├── dataset.csv
-                         ├── application_logging
-                             ├── logger.py
-                         ├── best_model_finder
-                             ├── modelTuning.py
-                         ├── data_ingestion
-                             ├── data_loader.py
-                         ├── data_preprocessing
-                             ├── preprocessing.py
-                         ├── models
-                             ├── RandomForestRegressor
-                                 ├── RandomForestRegressor.sav
-                         ├── app.py
-                         ├── encoded_features.json
-                         ├── model_infos.csv
-                         ├── multicolleniarity_heatmap.jpg
-                         ├── nan_values.csv
-                         ├── Training Infos.ipynb
-                         ├── requirements.txt
-```
-
-
 
 ## Bug / Feature Request
 
 If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an [issue](https://github.com/Lori10/Banglore-House-Price-Prediction/issues) here by including your search query and the expected result
-
-## Future Scope
-
-* Use other ML Estimators
-* Try other feature engineering approaches to get a possible higher model performance
-* Optimize Flask app.py Front End
