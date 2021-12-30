@@ -49,10 +49,10 @@ These are the data-preprocessing techniques that I used to preprare the dataset 
 
 | Model Name                 | Test Accuracy            |    Test Loss                | CV Accuracy            |  CV Loss          |   Training Accuracy  | Training Loss  |
 |:--------------------------:|:------------------------:|:---------------------------:|:----------------------:|:-----------------:|:--------------------:|:--------------:|
-|LeNet NN                    |     0.7891               |     0.7833                  |         0.7800         |     0.7833        |         0.7800       |   0.7800       | 
-|LeNet NN with Early Stopping|     0.8794               |     0.9700                  |         0.8758         |     0.7833        |         0.7800       |   0.7800       | 
-|Tuned LeNet                 |     0.8514               |     0.8861                  |         0.8105         |     0.7833        |         0.7800       |   0.7800       | 
-|LeNet with Data Augmentation|     0.8514               |     0.8861                  |         0.8105         |     0.7833        |         0.7800       |   0.7800       | 
+|LeNet NN                    |     0.941                |     0.818                   |         0.957          |     0.467         |         0.998        |   0.009        | 
+|LeNet NN with Early Stopping|     0.907                |     0.526                   |         0.938          |     0.256         |         0.987        |   0.048        | 
+|Tuned LeNet                 |     0.935                |     0.514                   |            0.960       |     0.253         |         0.999        |   0.003        | 
+|LeNet with Data Augmentation|     0.820                |     0.836                   |         -              |   -               |        -             |   -            | 
 |VGG16 - Transfer Learning   |     0.8514               |     0.8861                  |         0.8105         |     0.7833        |         0.7800       |   0.7800       |     
 
 
