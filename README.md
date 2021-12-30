@@ -47,11 +47,14 @@ These are the data-preprocessing techniques that I used to preprare the dataset 
 * I evaluated each ML model using training score, cross validation score, test score to get a better understanding about the model performances. The best model is selected using the test score.
 * The best model I got out of all models is Random Forest with an accuracy of .8793.
 
-| Model Name        | Test Score               |            Training Score   | CV Score               | 
-|:-----------------:|:------------------------:|:---------------------------:|:----------------------:|
-|Linear Regression  |     0.7891               |     0.7833                  |         0.7800         |              
-|Random Forest      |     0.8794               |     0.9700                  |         0.8758         |               
-|KNN                |     0.8514               |     0.8861                  |         0.8105         |              
+| Model Name                 | Test Score               |            Training Score   | CV Score               | 
+|:--------------------------:|:------------------------:|:---------------------------:|:----------------------:|
+|LeNet NN                    |     0.7891               |     0.7833                  |         0.7800         |              
+|LeNet NN with Early Stopping|     0.8794               |     0.9700                  |         0.8758         |               
+|Tuned LeNet                 |     0.8514               |     0.8861                  |         0.8105         |    
+|LeNet with Data Augmentation|     0.8514               |     0.8861                  |         0.8105         |  
+|VGG16 (Transfer Learning)   |     0.8514               |     0.8861                  |         0.8105         |  
+|T                           |     0.8514               |     0.8861                  |         0.8105         |  
 
 
 ## Other Used Techniques
