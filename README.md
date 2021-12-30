@@ -9,9 +9,7 @@
   * [Used Techniques](#Other-Used-Techniques)
   * [Demo](#demo)
   * [Run project in your local machine](#Run-the-project-in-your-local-machine)
-  * [Directory Tree](#directory-tree)
   * [Bug / Feature Request](#bug---feature-request)
-  * [Future scope of project](#future-scope)
 
 
 ## Business Problem Statement
