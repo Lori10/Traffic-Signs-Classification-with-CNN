@@ -44,7 +44,7 @@ These are the data-preprocessing techniques that I used to preprare the dataset 
 * Data Augmentation is used to have a better performance on new images. We get lower accuracy on this particular test set because its distribution is very similar to the training data distribution. Images in test set are not in different shapes,rotated, flipped etc. But when it comes to new images it might perform better than the model that was trained without using data augmentation.
 * I applied transfer Learning using the pre-trained model VGG16 which was trained to predict images of 1000 different classes.
 * I evaluated each ML model using training score, cross validation score, test score to get a better understanding about the model performances. The best model is selected using the test and validation score.
-* The best model I got out of all models is Tuned LeNet.
+* The best model I got out of all models is the Tuned LeNet.
 
 | Model Name                 | Test Accuracy            |    Test Loss                | CV Accuracy            |  CV Loss          |   Training Accuracy  | Training Loss  |
 |:--------------------------:|:------------------------:|:---------------------------:|:----------------------:|:-----------------:|:--------------------:|:--------------:|
@@ -64,7 +64,7 @@ These are the data-preprocessing techniques that I used to preprare the dataset 
 This is how the web application looks like : 
 
 
-![alt text](https://github.com/Lori10/Banglore-House-Price-Prediction/blob/master/Project%20Code%20Pycharm/demo_image.jpg "Image")
+![alt text](https://github.com/Lori10/Traffic-Signs-ImageClassification/blob/main/img.PNG "Image")
 
 
 
