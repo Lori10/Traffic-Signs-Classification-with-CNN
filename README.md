@@ -53,7 +53,7 @@ These are the data-preprocessing techniques that I used to preprare the dataset 
 |LeNet NN with Early Stopping|     0.8794               |     0.9700                  |         0.8758         |     0.7833        |         0.7800       |   0.7800       | 
 |Tuned LeNet                 |     0.8514               |     0.8861                  |         0.8105         |     0.7833        |         0.7800       |   0.7800       | 
 |LeNet with Data Augmentation|     0.8514               |     0.8861                  |         0.8105         |     0.7833        |         0.7800       |   0.7800       | 
-|VGG16                       |     0.8514               |     0.8861                  |         0.8105         |     0.7833        |         0.7800       |   0.7800       |     
+|VGG16 - Transfer Learning   |     0.8514               |     0.8861                  |         0.8105         |     0.7833        |         0.7800       |   0.7800       |     
 
 
 ## Other Used Techniques
