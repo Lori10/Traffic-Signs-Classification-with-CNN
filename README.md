@@ -39,13 +39,12 @@ These are the data-preprocessing techniques that I used to preprare the dataset 
 ## Model Building and Tuning
 
 * I trained a Convolutional Neural Networks using LeNet architechture which seems to overfit to the training set. 
-* To avoid overfitting, I used to the Early Stopping Callback technique. If the accuracy on the training set is greater than 0.98, the training stops.
-* Hyperparameter Tuning is done using RandomSearch of KerasTuner. Hypyerparameters are randomly selected and tuned.
-* Data Augmentation is used to have a better performance on new images.
+* To avoid overfitting, I used to the Early Stopping Callback technique. If the accuracy on the training set is greater than 0.98, the training stops. This model got a lower accuracy but also lower loss on test set.
+* Hyperparameter Tuning is done using RandomSearch of KerasTuner. Hypyerparameters are randomly selected and tuned. The tuned model got almost the same accuracy as the default model and a lower loss on test set.
+* Data Augmentation is used to have a better performance on new images. We get lower accuracy on this particular test set because its distribution is very similar to the training data distribution. Images in test set are not in different shapes,rotated, flipped etc. But when it comes to new images it might perform better than the model that was trained without using data augmentation.
 * I applied transfer Learning using the pre-trained model VGG16 which was trained to predict images of 1000 different classes.
-
-* I evaluated each ML model using training score, cross validation score, test score to get a better understanding about the model performances. The best model is selected using the test score.
-* The best model I got out of all models is Random Forest with an accuracy of .8793.
+* I evaluated each ML model using training score, cross validation score, test score to get a better understanding about the model performances. The best model is selected using the test and validation score.
+* The best model I got out of all models is Tuned LeNet.
 
 | Model Name                 | Test Accuracy            |    Test Loss                | CV Accuracy            |  CV Loss          |   Training Accuracy  | Training Loss  |
 |:--------------------------:|:------------------------:|:---------------------------:|:----------------------:|:-----------------:|:--------------------:|:--------------:|
